@@ -1,0 +1,9 @@
+python -c "
+data = open('token', 'rb').read()
+result = ''
+for i in range(len(data)):
+    decrypted_val = ord(data[i]) - i
+    decrypted_val = decrypted_val % 256
+    result += chr(decrypted_val)
+print(result)
+"
