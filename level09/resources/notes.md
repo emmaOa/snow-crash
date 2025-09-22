@@ -20,7 +20,8 @@
    - Command: `su flag09`
    - Password: `f3iji1ju5yuevaus41q1afiuq`
 
-6. Ran `getflag` to get the token for the next level.
+6. Ran `getflag` to obtain the level09 flag:
+   - **Flag: `s5cAJpM8ev6XHw998pRWG728z`**
 
 ## Encryption/Decryption Logic:
 - **Encryption**: `character + index`
