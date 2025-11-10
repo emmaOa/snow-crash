@@ -8,7 +8,7 @@
 3. Analyzed the PCAP file to extract the password:
    - Used `tcpdump` to filter packets destined for port 12121 (telnet) with length 1 (keystrokes):
      ```bash
-     tcpdump -r level02.pcap -nn -X 'dst port 12121 and length 1' | grep -oP '0x0030:.* \K[0-9a-f]{2}$' | xxd -r -p
+         tcpdump -r level02.pcap -A -l | grep -A 50 "Password"
      ```
    - Extracted password: `ft_waNDReL0L`
 4. Switched to user `flag02`:
